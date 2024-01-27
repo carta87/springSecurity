@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     const requestOptions = {                                                                                                                                                                                 
       headers: new HttpHeaders({
-        'Authorization': 'Basic dXNlcjplYzRkYWM2MS0yODZlLTQ4YzAtYjJhNy0yYTM0MzFiNDNkM2M='
+        'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlzcyI6InBsYXR6aS1waXp6YSIsImV4cCI6MTcwNzY4MDk3MSwiaWF0IjoxNzA2Mzg0OTcxfQ._gqtTPmQdD3mAnRYOy6dP1r3d4WLoC60ymGR1DAUHLo'
       }), 
     };
     
