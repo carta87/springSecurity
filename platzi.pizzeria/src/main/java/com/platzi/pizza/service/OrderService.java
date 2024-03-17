@@ -47,11 +47,13 @@ public class OrderService {
     }
 
     public OrderSummary getSummary(int orderId) {
+
         return this.orderRepository.findSummary(orderId);
     }
 
     @Transactional
     public boolean saveRandomOrder(RandomOrderDto randomOrderDto) {
-        return this.orderRepository.saveRandomOrder(randomOrderDto.getIdCustomer(), randomOrderDto.getMethod());
+        return this.orderRepository.saveRandomOrder(randomOrderDto.getIdCustomer(),
+                randomOrderDto.getMethod());
     }
 }
